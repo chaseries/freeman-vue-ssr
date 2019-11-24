@@ -1,6 +1,6 @@
 <template>
   <section class="page page-index">
-    <nav>
+    <nav class="page-index__nav">
       <ul>
         <li><router-link to="/about">About Me</router-link></li>
         <li><router-link to="/work">My Work</router-link></li>
@@ -18,14 +18,14 @@ export default {
 </script>
 
 <style lang="sass">
-@import "~SASS/main";
+@import "~SASS/mixin/strip";
+@import "~SASS/mixin/typo";
 
 .page-index
   text-align: center
-
+  &__nav
+    @include font-level-3
   ul
-    list-style-type: none
-    margin: 0
-    padding: 0
+    @include stripped-ul
 
 </style>
