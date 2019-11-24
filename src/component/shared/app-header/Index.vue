@@ -37,8 +37,11 @@ export default {
 
 .page-header
   text-align: center
+  margin-bottom: 4rem
   &__tagline
     @include font-level-4
+    display: block
+    margin-bottom: 2rem
   &__images
     display: grid
     grid-template-columns: repeat(4, 1fr)
@@ -49,7 +52,6 @@ export default {
   ul
     @include font-level-3
     @include stripped-ul
-    margin-bottom: 4em
   li
     display: inline
     padding: 0 0.5em

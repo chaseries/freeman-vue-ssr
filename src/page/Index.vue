@@ -25,7 +25,9 @@ export default {
   text-align: center
   &__nav
     @include font-level-3
-  ul
-    @include stripped-ul
+    ul
+      @include stripped-ul
+    li
+      margin-bottom: 1em
 
 </style>
